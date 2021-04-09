@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Housing</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'css/all.css'%} ">
+  <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css'%} ">
+  <!-- Custom -->
+    <link rel="stylesheet" href="{% static 'css/style.css'%}  ">
+  <!-- Light box-->
+    <link rel="stylesheet" href="{% static 'css/lightbox.css'%}  ">
+</head>
+<body>
+
+{% comment %} top bar {% endcomment %}
+
+{% include 'partials/__topbar.html'%}
+
+  <!-- Navbar -->
+  {% include 'partials/__navbar.html'%}
+
+  <!-- Main content-->
+    {% block content %} 
+    {% endblock %}
+
+  <!-- footer-->
+  {% include 'partials/__footer.html'%}
+  
+
+
+    
+
+
+     
+
+
+</body>
+ <script src="{% static 'js/jquery-3.3.1.min.js'%}  "></script>
+  <script src="{% static ' js/bootstrap.bundle.min.js'%} "></script>
+  <script src="{% static ' js/lightbox.min.js'%} "></script>
+  <script src="{% static 'js/main.js'%}  "></script>
+</html>

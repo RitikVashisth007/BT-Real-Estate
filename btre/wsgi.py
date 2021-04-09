@@ -14,3 +14,6 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'btre.settings')
 
 application = get_wsgi_application()
+
+
+#  WEB SERVER GATEWAY   how the webserver communicate with web application
